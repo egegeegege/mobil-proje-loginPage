@@ -10,20 +10,7 @@ const LoginScreen = () => {
     if (email === '' || password === '') {
       Alert.alert('Error', 'Please enter email and password', [{ text: 'OK' }]);
     } else {
-      // You can use any authentication method here
-      // For example, you can use Firebase authentication
-      // Here is a simple example:
-      // firebase.auth().signInWithEmailAndPassword(email, password)
-      //   .then(() => {
-      //     console.log('User signed in successfully');
-      //     navigation.navigate('Home');
-      //   })
-      //   .catch(error => {
-      //     console.log('Error signing in', error);
-      //     Alert.alert('Error', 'Invalid email or password', [{ text: 'OK' }]);
-      //   });
-
-      // For this example, we'll just show an alert
+     
       Alert.alert('Success', 'You are logged in', [{ text: 'OK' }]);
     }
   };
